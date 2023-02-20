@@ -6,13 +6,7 @@ const  Portfolio= ()=> {
     
     const [item,setitem]=useState(allportfolio);
     
-    const filteritem = (categitem) =>{
-    const updatedItems = allportfolio.filter((curElem) => {
-        return curElem.contain === categitem;
-    });
-    setitem(updatedItems);
 }
-
   return (
     <div>
          <div className="contavtus">
