@@ -41,7 +41,7 @@ const  Portfolio= ()=> {
                                     
                                         {  
                                  
-                                          allportfolio.map((value, index, array) => { 
+                                 item.map((value, index) => { 
                                             return  <div className="col-lg-4 col-md-6">
                                             <div className="mt-3 pfolio-images"> 
                                                 <div key={index}>
@@ -52,9 +52,7 @@ const  Portfolio= ()=> {
                                             </div>
                                         </div>
                                         })}
-                                          
-                                       
-                                    
+
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
