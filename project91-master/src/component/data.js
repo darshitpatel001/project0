@@ -3,7 +3,7 @@ const allportfolio = [
   {
 
     photo: "person-using.jpg",
-    contain: "Disign"
+    contain: "Design"
   },
   {
     photo: "176_E39A2335.jpg",
@@ -11,7 +11,7 @@ const allportfolio = [
   },
   {
     photo: "5-book-reading.jpg",
-    contain: "Disign"
+    contain: "Design"
   },
   {
     photo: "6697_wide_250x141_2x.jpg",
@@ -23,7 +23,7 @@ const allportfolio = [
   },
   {
     photo: "assam-india.jpg",
-    contain: "Disign"
+    contain: "Design"
   }
 ];
 
