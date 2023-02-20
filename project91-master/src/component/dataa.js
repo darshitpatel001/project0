@@ -12,5 +12,5 @@ const allslider = [
       photo: "0jwhEGnX_400x400.jpg"
     }
   ];
-  
+
   export default allslider;
