@@ -6,7 +6,13 @@ const  Portfolio= ()=> {
     
     const [item,setitem]=useState(allportfolio);
     
+    const filteritem = (categitem) =>{
+    const updatedItems = allportfolio.filter((curElem) => {
+        return curElem.contain === categitem;
+    });
+    setitem(updatedItems);
 }
+
   return (
     <div>
          <div className="contavtus">
@@ -18,7 +24,7 @@ const  Portfolio= ()=> {
                                     <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" onClick={() => filteritem(allportfolio)}>All</button>
                                 </li>
                                 <li className="nav-item" role="presentation">
-                                    <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" onClick={() => filteritem("Design")}>Design</button>
+                                    <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" onClick={() => filteritem("Disign")}>Design</button>
                                 </li>
                                 <li className="nav-item" role="presentation">
                                     <button className="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Devlopment</button>
@@ -35,7 +41,7 @@ const  Portfolio= ()=> {
                                     
                                         {  
                                  
-                                 item.map((value, index) => { 
+                                          allportfolio.map((value, index, array) => { 
                                             return  <div className="col-lg-4 col-md-6">
                                             <div className="mt-3 pfolio-images"> 
                                                 <div key={index}>
@@ -46,7 +52,9 @@ const  Portfolio= ()=> {
                                             </div>
                                         </div>
                                         })}
-
+                                          
+                                       
+                                    
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
